@@ -1,0 +1,217 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>周予涵 - 系统策划作品集</title>
+<style>
+  :root {
+    --bg: #0d1117;
+    --card: #161b22;
+    --border: #30363d;
+    --text: #c9d1d9;
+    --muted: #8b949e;
+    --accent: #58a6ff;
+    --tag-bg: #1f2937;
+    --tag-text: #9ca3af;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    min-height: 100vh;
+  }
+  .container { max-width: 800px; margin: 0 auto; padding: 40px 24px; }
+
+  .header { text-align: center; padding: 60px 0 40px; border-bottom: 1px solid var(--border); margin-bottom: 40px; }
+  .header h1 { font-size: 2rem; font-weight: 700; margin-bottom: 8px; letter-spacing: 1px; }
+  .header .subtitle { color: var(--accent); font-size: 1.05rem; margin-bottom: 12px; }
+  .header .meta { color: var(--muted); font-size: 0.9rem; }
+  .header .meta span { margin: 0 8px; }
+
+  .section { margin-bottom: 48px; }
+  .section-title {
+    font-size: 1.25rem; font-weight: 600; margin-bottom: 20px;
+    padding-bottom: 8px; border-bottom: 1px solid var(--border);
+    display: flex; align-items: center; gap: 10px;
+  }
+  .section-title::before { content: ""; width: 4px; height: 20px; background: var(--accent); border-radius: 2px; }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 24px;
+    margin-bottom: 20px;
+  }
+  .card h3 { font-size: 1.1rem; margin-bottom: 6px; }
+  .card .card-sub { color: var(--muted); font-size: 0.85rem; margin-bottom: 14px; }
+  .card p, .card li { font-size: 0.93rem; color: var(--text); }
+  .card ul { padding-left: 18px; }
+  .card li { margin-bottom: 6px; }
+  .card li::marker { color: var(--accent); }
+
+  .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+  .tag {
+    background: var(--tag-bg);
+    color: var(--tag-text);
+    font-size: 0.78rem;
+    padding: 3px 10px;
+    border-radius: 20px;
+  }
+  .tag.highlight { background: #1a3a5c; color: var(--accent); }
+
+  .highlight-box {
+    background: #0d1f2d;
+    border-left: 3px solid var(--accent);
+    padding: 14px 18px;
+    border-radius: 4px;
+    margin-top: 12px;
+    font-size: 0.9rem;
+    color: var(--accent);
+  }
+
+  .skills-grid { display: grid; gap: 16px; }
+  .skill-item { display: flex; align-items: flex-start; gap: 12px; }
+  .skill-dot { width: 8px; height: 8px; background: var(--accent); border-radius: 50%; margin-top: 7px; flex-shrink: 0; }
+  .skill-item .skill-label { font-weight: 600; font-size: 0.9rem; min-width: 80px; }
+  .skill-item .skill-desc { color: var(--muted); font-size: 0.88rem; }
+
+  .footer { text-align: center; padding: 30px 0; color: var(--muted); font-size: 0.83rem; border-top: 1px solid var(--border); }
+  .footer a { color: var(--accent); text-decoration: none; }
+  .footer a:hover { text-decoration: underline; }
+
+  .slogan { text-align: center; font-size: 0.95rem; color: var(--muted); font-style: italic; margin-bottom: 36px; }
+
+  @media (max-width: 640px) {
+    .container { padding: 20px 16px; }
+    .header { padding: 36px 0 24px; }
+    .header h1 { font-size: 1.5rem; }
+    .card { padding: 18px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header class="header">
+    <h1>周予涵</h1>
+    <div class="subtitle">系统策划实习生</div>
+    <div class="meta">
+      西北民族大学 · 软件工程 · 27届本科
+      <span>|</span> 上海 / 杭州 / 苏州
+    </div>
+    <div class="meta" style="margin-top:4px;">
+      <a href="mailto:z15943994959@163.com" style="color:var(--muted);text-decoration:none;">z15943994959@163.com</a>
+      <span>|</span> 15943994959
+    </div>
+  </header>
+
+  <div class="slogan">
+    "用玩家直觉找到对的感觉，用数值沙盘砍掉冗余。做减法的策划，不做功能的搬运工。"
+  </div>
+
+  <div class="section">
+    <div class="section-title">技能</div>
+    <div class="card">
+      <h3>系统与数值设计</h3>
+      <p>精通Excel高级函数与逻辑嵌套，独立搭建30天玩家行为模拟沙盘。习惯先设计再反推验证，擅长用数据修正直觉。</p>
+    </div>
+    <div class="card">
+      <h3>工具链</h3>
+      <p>Excel · Visio · Office三件套 · 游戏开发流程对接 · Unity编辑器基础 · xml/json/lua配置表</p>
+    </div>
+    <div class="card">
+      <h3>程序思维</h3>
+      <p>软件工程背景，能阅读数据结构定义。与程序沟通用"这个状态机缺一个超时兜底"，而非"这里好像有bug"。</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">项目</div>
+
+    <div class="card">
+      <h3>家园养成系统设计</h3>
+      <div class="card-sub">系统策划 + 数值验证 · 独立完成</div>
+      <p style="margin-bottom:10px;"><strong>背景：</strong>洛克王国家园系统后期目标感缺失。设计"精灵放置产出 + 属性家具收集"长线循环，拉长养成目标至30天以上。</p>
+      <p style="margin-bottom:6px;"><strong>核心设计决策：</strong></p>
+      <ul>
+        <li>统一木材池 → 消除"产出错位"挫败感，每一点产出都指向目标</li>
+        <li>发现ROUNDDOWN取整致家具购买后体验无提升 → 反推20h→15h，购买第2家具时领取次数1→2</li>
+        <li>搭建"勤换vs不换"双玩家30天沙盘，验证惩罚机制并修正家具效率叠加边际收益</li>
+      </ul>
+      <p style="margin-bottom:6px;margin-top:10px;"><strong>产出：</strong></p>
+      <ul>
+        <li>系统设计案（完整规则文档 + 闭环流程）</li>
+        <li>Excel数值沙盘（30天 × 双玩家行为，含参数调节区，改参自动刷新）</li>
+        <li>沙盘反推修正3处逻辑盲区</li>
+      </ul>
+      <div class="highlight-box">该方法论可迁移至二次元卡牌基建系统（宿舍、家园等放置模块）</div>
+      <div class="tags">
+        <span class="tag highlight">Excel数值沙盘</span>
+        <span class="tag">长线养成</span>
+        <span class="tag">放置产出</span>
+        <span class="tag">反推修正</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>翻面战斗系统设计 + 哈迪斯Build拆解</h3>
+      <div class="card-sub">核心玩法创新 + 竞品拆解反哺 · 独立设计</div>
+      <p style="margin-bottom:10px;"><strong>设计定位：</strong>针对横版动作博弈痛点，创新阴阳翻面机制——切换位面改变怪物属性与战场状态，融入狂暴键高风险高回报决策。</p>
+      <p style="margin-bottom:6px;"><strong>拆解反哺：</strong></p>
+      <ul>
+        <li>拆解《哈迪斯》祝福Build随机性框架 → 提炼"有限随机池 + 可控重随"</li>
+        <li>将该框架迁移至翻面战斗的增伤触发规则 → 确保每局"可预期的惊喜感"</li>
+      </ul>
+      <p style="margin-bottom:6px;margin-top:10px;"><strong>产出：</strong></p>
+      <ul>
+        <li>核心规则文档 + 流程图</li>
+        <li>哈迪斯Build拆解报告（框架已应用于自研战斗系统）</li>
+      </ul>
+      <div class="tags">
+        <span class="tag highlight">翻面机制</span>
+        <span class="tag">随机性框架</span>
+        <span class="tag">哈迪斯拆解</span>
+        <span class="tag">风险决策</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">游戏经历</div>
+    <div class="card">
+      <div class="skills-grid">
+        <div class="skill-item"><div class="skill-dot"></div><div><span class="skill-label">回合制RPG</span><span class="skill-desc">洛克王国（8年）· 星穹铁道（当前活跃）</span></div></div>
+        <div class="skill-item"><div class="skill-dot"></div><div><span class="skill-label">Roguelike</span><span class="skill-desc">哈迪斯 · 死亡细胞 · 小丑牌</span></div></div>
+        <div class="skill-item"><div class="skill-dot"></div><div><span class="skill-label">开放世界</span><span class="skill-desc">荒野大镖客2（800h）· 赛博朋克2077（300h+）· 原神</span></div></div>
+        <div class="skill-item"><div class="skill-dot"></div><div><span class="skill-label">ACT</span><span class="skill-desc">黑神话悟空 · 绝区零</span></div></div>
+        <div class="skill-item"><div class="skill-dot"></div><div><span class="skill-label">FTG</span><span class="skill-desc">街霸6</span></div></div>
+        <div class="skill-item"><div class="skill-dot"></div><div><span class="skill-label">SIM</span><span class="skill-desc">星露谷（300h+）</span></div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">作品集附件</div>
+    <div class="card">
+      <ul>
+        <li>《家园系统设计案》— 完整系统规则与闭环流程</li>
+        <li>《家园系统数值沙盘》— 30天双玩家模拟 + 参数联动</li>
+        <li>《翻面战斗核心规则文档》— 机制说明 + 流程图</li>
+      </ul>
+      <p style="margin-top:12px;font-size:0.85rem;color:var(--muted);">
+        详细文档与Excel沙盘可邮件索取：<a href="mailto:z15943994959@163.com" style="color:var(--accent);">z15943994959@163.com</a>
+      </p>
+    </div>
+  </div>
+
+  <footer class="footer">
+    © 2026 周予涵 · 系统策划作品集 · Powered by <a href="https://pages.github.com" target="_blank">GitHub Pages</a>
+  </footer>
+
+</div>
+</body>
+</html>
